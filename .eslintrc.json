@@ -1,0 +1,14 @@
+{
+    "extends": [
+        "@dvukovic/eslint-config/core",
+        "@dvukovic/eslint-config/typescript",
+        "@dvukovic/eslint-config/type-graphql"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "project": "./tsconfig.json"
+    },
+    "rules": {
+       "type-graphql/invalid-nullable-output-type": "off"
+    }
+}
