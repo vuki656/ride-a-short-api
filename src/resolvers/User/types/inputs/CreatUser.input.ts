@@ -6,19 +6,19 @@ import {
 @InputType()
 export class CreateUserInput {
 
-    @Field()
+    @Field(() => String)
     username: string
 
-    @Field()
+    @Field(() => String)
     email: string
 
-    @Field()
+    @Field(() => String)
+    password: string
+
+    @Field(() => String)
     firstName: string
 
-    @Field()
+    @Field(() => String)
     lastName: string
-
-    @Field()
-    password: string
 
 }

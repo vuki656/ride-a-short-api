@@ -8,7 +8,7 @@ import { UserType } from '../User.type'
 @ObjectType()
 export class CreateUserPayload {
 
-    @Field()
+    @Field(() => UserType)
     user: UserType
 
     constructor(user: UserType) {
